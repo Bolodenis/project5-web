@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        footer{
+            background-color: rgb(15, 2, 2);
+            text-align: center;
+            bottom: 0;
+            padding: 10px;
+            position: absolute;
+            width: 100%;
+            color: white;
+        }
+        .nav{
+            background-color: rgb(19, 14, 5);
+            padding: 10px;
+            margin-top: -8px;
+            width: 100%;
+            margin-left: -8px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .nav ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .nav ul li{
+            display: inline-block;
+            padding: 10px;
+        }
+        .nav ul li a{
+            text-decoration: none;
+            font-size: 25px;
+            color: white;
+            text-transform: uppercase;
+            padding: 20px;
+        }
+        a:hover{
+            background-color: red;
+            transition: 2s;
+        }
+        .row1 {
+            float: left;
+            width: 33.33%;
+            padding: 15px;
+            box-sizing: border-box; /* Include padding in width calculation */
+            height: 25%;
+        }
+        .column{
+            overflow: auto;
+            float: left; 
+        }
+        body{
+            background-image: url("https://www.mappr.co/wp-content/uploads/2021/01/image-979.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .active{
+            background-color: gray;
+            
+        }
+        .search-bar {
+            margin-left: 20px;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid white;
+            background-color:white;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<div class="nav">
+    <div>
+        <input type="text" placeholder="Search..." class="search-bar">
+    </div>
+    <ul>
+        <li><a href="Home" class="active">Home</a></li>
+        <li><a href="./careers.html">Careers</a></li>
+        <li><a href="./contact.html">contact</a></li>
+        <li><a href="./project.html">Project</a></li>
+    </ul>
+</div>
+
+<div class="column">
+    <div class="row1">
+        <h2>Column</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, quidem! Saepe eveniet deleniti porro dolor voluptas optio quis non enim? Doloremque porro eum accusantium velit veniam laboriosam architecto id suscipit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente aspernatur accusantium est? Maiores soluta doloribus, iusto modi nulla odit saepe veniam, ducimus dolor itaque ut nam in iste inventore quidem.</p>
+    </div>
+    <div class="row1">
+        <h2>Column</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, quidem! Saepe eveniet deleniti porro dolor voluptas optio quis non enim? Doloremque porro eum accusantium velit veniam laboriosam architecto id suscipit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente aspernatur accusantium est? Maiores soluta doloribus, iusto modi nulla odit saepe veniam, ducimus dolor itaque ut nam in iste inventore quidem.</p>
+    </div>
+    <div class="row1">
+        <h2>Column</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, quidem! Saepe eveniet deleniti porro dolor voluptas optio quis non enim? Doloremque porro eum accusantium velit veniam laboriosam architecto id suscipit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente aspernatur accusantium est? Maiores soluta doloribus, iusto modi nulla odit saepe veniam, ducimus dolor itaque ut nam in iste inventore quidem.</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; Copyright</p>
+</footer>
+</body>
+</html>

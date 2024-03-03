@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form Example</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #140202;
+        margin: 0;
+        padding: 0;
+    }
+
+    form {
+        max-width: 400px;
+        margin: 10% auto;
+        padding: 20px;
+        background-image: url(https://www.shutterstock.com/blog/wp-content/uploads/sites/5/2020/07/shutterstock_582803470.jpg?w=750);
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    textarea {
+        width: 100%;
+        max-width: 100%; /* Add this line to limit the width */
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    
+
+    .button_1 {
+        width: 100%;
+        padding: 10px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .button_1:hover {
+        background-color: #45a049;
+    }
+    input[type="text"]:focus{
+        border: 2px solid red;
+    }
+</style>
+</head>
+<body>
+
+<form>
+    <label for="firstname">First Name:</label>
+    <input type="text" id="firstname" placeholder="Enter your firstname" required>
+    
+    <label for="surname">Surname:</label>
+    <input type="text" id="surname" placeholder="Enter your surname" required>
+    
+    <label for="message">Your Message:</label>
+    <textarea id="message" placeholder="Enter your message" required></textarea>
+    
+    <button type="submit" class="button_1">Send Message</button>
+</form>
+
+</body>
+</html>
